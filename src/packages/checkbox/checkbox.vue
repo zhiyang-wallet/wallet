@@ -5,6 +5,7 @@
             'is-disabled': isDisabled,
             'is-checked': isChecked
         }"
+        
         role="checkbox"
     >
         <span class="ryt-checkbox_input"
