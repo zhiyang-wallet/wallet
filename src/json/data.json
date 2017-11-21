@@ -1,0 +1,514 @@
+{
+  "companyData": {
+
+      "data": {
+        "result": {
+          "area": "3",
+          "areaName": "华南区",
+          "certificateDate": "1491474113000",
+          "certificateStatus": "2",
+          "cityId": "10000",
+          "cityName": "安吉",
+          "contactMobile": "13433334444",
+          "contactPerson": "测试用户",
+          "createDt": 1447983609000,
+          "email": "asdgadgad@sadfasdf.com",
+          "id": 212,
+          "isDeleted": 0,
+          "isDisabled": 0,
+          "logoPath": "https://hro.ezhiyang.com/loadfile.action?fileId=61873",
+          "logoPathId": 2261,
+          "operateFlag": 1,
+          "orgName": "bak测试公司",
+          "orgNature": "10001",
+          "orgScale": "233",
+          "provinceId": 10719,
+          "provinceName": "浙江省",
+          "registerAddress": "",
+          "updateDt": 1495094976000
+        },
+      "msg": "查询成功",
+      "success": true
+    },
+    "msg": "查询成功",
+    "success": true
+  },
+  "province": {
+    "data": [
+      {
+        "provinceId": 10719,
+        "provinceName": "浙江省"
+      },
+      {
+        "provinceId": 10723,
+        "provinceName": "河南省"
+      },
+      {
+        "provinceId": 10714,
+        "provinceName": "辽宁省"
+      },
+      {
+        "provinceId": 10715,
+        "provinceName": "吉林省"
+      },
+      {
+        "provinceId": 10716,
+        "provinceName": "黑龙江省"
+      },
+      {
+        "provinceId": 10712,
+        "provinceName": "内蒙古自治区"
+      },
+      {
+        "provinceId": 10718,
+        "provinceName": "江苏省"
+      },
+      {
+        "provinceId": 10713,
+        "provinceName": "山东省"
+      },
+      {
+        "provinceId": 10720,
+        "provinceName": "安徽省"
+      },
+      {
+        "provinceId": 10721,
+        "provinceName": "福建省"
+      },
+      {
+        "provinceId": 10726,
+        "provinceName": "广东省"
+      },
+      {
+        "provinceId": 10731,
+        "provinceName": "云南省"
+      },
+      {
+        "provinceId": 10722,
+        "provinceName": "江西省"
+      },
+      {
+        "provinceId": 10724,
+        "provinceName": "湖北省"
+      },
+      {
+        "provinceId": 10725,
+        "provinceName": "湖南省"
+      },
+      {
+        "provinceId": 10729,
+        "provinceName": "四川省"
+      },
+      {
+        "provinceId": 10730,
+        "provinceName": "贵州省"
+      },
+      {
+        "provinceId": 10727,
+        "provinceName": "广西壮族自治区"
+      },
+      {
+        "provinceId": 10728,
+        "provinceName": "海南省"
+      },
+      {
+        "provinceId": 10708,
+        "provinceName": "北京"
+      },
+      {
+        "provinceId": 10717,
+        "provinceName": "上海"
+      },
+      {
+        "provinceId": 10709,
+        "provinceName": "天津"
+      },
+      {
+        "provinceId": 10738,
+        "provinceName": "重庆"
+      },
+      {
+        "provinceId": 10733,
+        "provinceName": "陕西省"
+      },
+      {
+        "provinceId": 10710,
+        "provinceName": "河北省"
+      },
+      {
+        "provinceId": 10711,
+        "provinceName": "山西省"
+      },
+      {
+        "provinceId": 10732,
+        "provinceName": "西藏自治区"
+      },
+      {
+        "provinceId": 10737,
+        "provinceName": "新疆维吾尔自治区"
+      },
+      {
+        "provinceId": 10734,
+        "provinceName": "甘肃省"
+      },
+      {
+        "provinceId": 10736,
+        "provinceName": "宁夏回族自治区"
+      },
+      {
+        "provinceId": 10735,
+        "provinceName": "青海省"
+      }
+    ],
+    "msg": "查询成功",
+    "success": true
+  },
+  "area": {
+    "data": [
+      {
+        "areaId": 1,
+        "areaName": "华北区"
+      },
+      {
+        "areaId": 2,
+        "areaName": "华东区"
+      },
+      {
+        "areaId": 3,
+        "areaName": "华南区"
+      },
+      {
+        "areaId": 4,
+        "areaName": "华中区"
+      },
+      {
+        "areaId": 5,
+        "areaName": "西北区"
+      },
+      {
+        "areaId": 6,
+        "areaName": "西南区"
+      },
+      {
+        "areaId": 7,
+        "areaName": "东北区"
+      },
+      {
+        "areaId": 8,
+        "areaName": "上海区"
+      }
+    ],
+    "msg": "查询成功",
+    "success": true
+  },
+  "city": {
+    "data": [
+      {
+        "cityId": 1,
+        "cityName": "上海"
+      },
+      {
+        "cityId": 2,
+        "cityName": "上饶"
+      },
+      {
+        "cityId": 3,
+        "cityName": "上虞"
+      },
+      {
+        "cityId": 4,
+        "cityName": "上2"
+      },
+      {
+        "cityId": 5,
+        "cityName": "上3"
+      }
+    ],
+    "msg": "查询成功",
+    "success": true
+  },
+  "app": {
+    "msg": "",
+    "result": [
+      {
+        "ouSystemId": 1,
+        "systemId": 1,
+        "systemName": "用户中心"
+      },
+      {
+        "auditDt": 1452148238000,
+        "auditReply": "asdasd",
+        "openSysId": 1,
+        "ouSystemId": 2,
+        "status": 2,
+        "systemId": 2,
+        "systemName": "HRO"
+      },
+      {
+        "auditReply": "审核通过",
+        "openSysId": 22,
+        "ouSystemId": 3,
+        "status": 2,
+        "systemId": 3,
+        "systemName": "睿福利"
+      },
+      {
+        "auditDt": 1452148238000,
+        "auditReply": "ttttt",
+        "openSysId": 2,
+        "status": 4,
+        "systemId": 7,
+        "systemName": "招聘宝"
+      },
+      {
+        "ouSystemId": 8,
+        "systemId": 8,
+        "systemName": "HROFIRST"
+      },
+      {
+        "auditReply": "审核通过",
+        "openSysId": 27,
+        "ouSystemId": 9,
+        "status": 2,
+        "systemId": 9,
+        "systemName": "JABAVA"
+      },
+      {
+        "openSysId": 46,
+        "ouSystemId": 10,
+        "status": 2,
+        "systemId": 10,
+        "systemName": "妙市场"
+      },
+      {
+        "openSysId": 48,
+        "ouSystemId": 11,
+        "status": 2,
+        "systemId": 11,
+        "systemName": "HR问卷"
+      },
+      {
+        "openSysId": 81,
+        "status": 1,
+        "systemId": 12,
+        "systemName": "BPO"
+      },
+      {
+        "openSysId": 194,
+        "ouSystemId": 13,
+        "status": 2,
+        "systemId": 13,
+        "systemName": "FormTalk"
+      }
+    ],
+    "returnCode": "0",
+    "success": true
+  },
+  "auther": {
+    "list": [
+      {
+        "certificateTypeId": 1,
+        "certificateTypeName": "营业执照",
+        "filePath1": 1206,
+        "frontImageUrl": "https://hro.ezhiyang.com/loadfile.action?fileId=14248",
+        "id": 276,
+        "isApprove": 1,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "validityStart":"2017-5-1",
+        "validityEnd":"2017-5-2",
+        "paramList": [
+          {
+            "pamtId": 1,
+            "pamtName": "营业执照号码",
+            "paramValue": "123456"
+          },
+          {
+            "pamtId": 2,
+            "pamtName": "营业执照有效期起",
+            "paramValue": "2017-5-1",
+            "date":true
+          },
+          {
+            "pamtId": 3,
+            "pamtName": "营业执照有效期止",
+            "paramValue": "2017-5-2",
+            "date":true
+          }
+        ]
+      },
+      {
+        "certificateTypeId": 2,
+        "certificateTypeName": "组织机构代码证",
+        "filePath1": 1204,
+        "frontImageUrl": "https://hro.ezhiyang.com/loadfile.action?fileId=14246",
+        "id": 277,
+        "isApprove": 1,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": []
+      },
+      {
+        "certificateTypeId": 3,
+        "certificateTypeName": "税务登记证",
+        "filePath1": 1205,
+        "frontImageUrl": "https://hro.ezhiyang.com/loadfile.action?fileId=14247",
+        "id": 278,
+        "isApprove": 1,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": []
+      },
+      {
+        "certificateTypeId": 4,
+        "certificateTypeName": "企业法人",
+        "filePath1": 1805,
+        "frontImageUrl": "https://hro.ezhiyang.com/loadfile.action?fileId=31996",
+        "id": 279,
+        "isApprove": 0,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": []
+      },
+      {
+        "certificateTypeId": 5,
+        "certificateTypeName": "银行开户证明",
+        "filePath1": 2163,
+        "frontImageUrl": "https://hro.ezhiyang.com/loadfile.action?fileId=57914",
+        "id": 280,
+        "isApprove": 0,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": []
+      },
+      {
+        "certificateTypeId": 12,
+        "certificateTypeName": "银行开户许可号核准号",
+        "id": 281,
+        "isApprove": 0,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": []
+      },
+      {
+        "approveTime": 1486536146000,
+        "approveUserId": 27,
+        "backImageUrl": "http://bakfile.ezhiyang.com/image/show/0/0/1000x774/0f7acb035ee4c494f73d9430758e6275",
+        "certificateTypeId": 13,
+        "certificateTypeName": "人力资源服务证书",
+        "filePath1": 2518,
+        "filePath2": 2519,
+        "frontImageUrl": "http://bakfile.ezhiyang.com/image/show/0/0/1000x774/0f7acb035ee4c494f73d9430758e6275",
+        "id": 1852,
+        "isApprove": 0,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": [
+          {
+            "pamtId": 14,
+            "pamtName": "证书编号",
+            "paramValue": "sfswer"
+          },
+          {
+            "pamtId": 15,
+            "pamtName": "有效期起",
+            "paramValue": "2017-01-05"
+          },
+          {
+            "pamtId": 16,
+            "pamtName": "有效期止",
+            "paramValue": "2017-01-05"
+          }
+        ]
+      },
+      {
+        "approveTime": 1486536146000,
+        "approveUserId": 27,
+        "backImageUrl": "http://bakfile.ezhiyang.com/image/show/0/0/1000x774/0f7acb035ee4c494f73d9430758e6275",
+        "certificateTypeId": 14,
+        "certificateTypeName": "劳务派遣证",
+        "filePath1": 2516,
+        "filePath2": 2517,
+        "frontImageUrl": "http://bakfile.ezhiyang.com/image/show/0/0/1000x774/0f7acb035ee4c494f73d9430758e6275",
+        "id": 1853,
+        "isApprove": 0,
+        "isDeleted": 0,
+        "orgId": 212,
+        "orgName": "bak测试公司",
+        "paramList": [
+          {
+            "pamtId": 17,
+            "pamtName": "编号",
+            "paramValue": "斯蒂芬"
+          },
+          {
+            "pamtId": 18,
+            "pamtName": "发证日期",
+            "paramValue": "2017-01-12"
+          },
+          {
+            "pamtId": 19,
+            "pamtName": "有效期起",
+            "paramValue": "2017-01-18"
+          },
+          {
+            "pamtId": 20,
+            "pamtName": "有效期止",
+            "paramValue": "2017-01-06"
+          }
+        ]
+      }
+    ],
+    "msg": "",
+    "returnCode": 0,
+    "success": true
+  },
+  "loginData": {
+    "success": true,
+    "returnCode": 0,
+    "flag": 1,
+    "user": {
+
+      "loginId": "admin",
+      "loginName": "admin",
+      "userType": "2",
+
+      "orgId":123
+    },
+    "msg": "查询成功"
+  },
+  "mobileSnc": {
+    "success": true,
+    "returnCode": 1,
+    "msg": ""
+  },
+  "suc": {
+    "success": true,
+    "returnCode": 0,
+    "msg": "成功"
+  },
+  "err": {
+    "success": false,
+    "returnCode": 1,
+    "msg": "失败"
+  },
+  "upfile": {
+    "success": true,
+    "fileUrl": "1.jpg",
+    "returnCode": "0",
+    "msg": "上传成功"
+  },
+  "appsuc": {
+    "success": true,
+    "returnCode": 0,
+    "msg": "申请成功"
+  },
+  "apperr":{"success":false,"returnCode":1,"msg":"申请失败","flag":0}
+}

@@ -1,0 +1,123 @@
+@import "variable";
+@import "css3";
+@import "icon";
+.ryt-button{
+    display: inline-block;
+    cursor: pointer;
+    background: $white;
+    border: 1px solid $color-border;
+    border-color: $color-border;
+    color: $color-gray;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    span{
+        color: $color-gray;
+    }
+}
+.ryt-button-primary{
+    color: $white;
+    background-color: $color-main;
+    border-color: $color-main;
+    span{
+        color: $white;
+    }
+}
+.ryt-button-success{
+    color: $white;
+    background-color: $color-success;
+    border-color: $color-success;
+    span{
+        color: $white;
+    }
+}
+.ryt-button-warning{
+    color: $white;
+    background-color: $color-warning;
+    border-color: $color-warning;
+    span{
+        color: $white;
+    }
+}
+.ryt-button-danger{
+    color: $white;
+    background-color: $color-danger;
+    border-color: $color-danger;
+    span{
+        color: $white;
+    }
+}
+.is-round{
+    border-radius: 30px;
+    padding: 12px 23px;
+}
+.ryt-button-medium{
+    padding: 10px 20px;
+}
+.ryt-button-small{
+    padding: 9px 15px;
+}
+.ryt-button-mini{
+    padding: 7px;
+    font-size: 12px;
+}
+.is-loading{
+    position: relative;
+}
+.ryt-icon-right{
+    margin-left: 5px;
+}
+.ryt-button-group .ryt-button:not(:first-child):not(:last-child){
+    border-radius: 0;
+    margin:0;
+}
+.ryt-button-group .ryt-button:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -3px;
+}
+.ryt-button-group .ryt-button:last-child{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -4px;
+}
+.ryt-button.is-disabled{
+    cursor: not-allowed;
+    background-image: none;
+    span{
+       color:  $color-gray-hover;
+    }
+}
+.ryt-button.ryt-button-primary.is-disabled{
+    background-color: $color-main-hover;
+    border-color: $color-main-hover;
+    span{
+        color:  $white;
+     }
+}
+.ryt-button.ryt-button-success.is-disabled{
+    background-color: $color-success-hover;
+    border-color: $color-success-hover;
+    span{
+        color:  $white;
+     }
+}
+.ryt-button.ryt-button-warning.is-disabled{
+    background-color: $color-warning-hover;
+    border-color: $color-warning-hover;
+    span{
+        color:  $white;
+     }
+}
+.ryt-button.ryt-button-danger.is-disabled{
+    background-color: $color-danger-hover;
+    border-color: $color-danger-hover;
+    span{
+        color:  $white;
+     }
+}

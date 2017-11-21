@@ -1,0 +1,75 @@
+@import "variable";
+
+@mixin position($type,$w:null,$h:null,$t:null,$r:null,$b:nll,$l:null,$z:9999) {
+  position: $type;
+  width: $w;
+  height: $h;
+  z-index: $z;
+  @if not $t {
+    bottom: $b;
+  } @else {
+    top: $t;
+  }
+  @if not $l {
+    right: $r;
+  } @else {
+    left: $l;
+  }
+}
+
+
+@mixin MQ($canvas,$m) {
+  @if $canvas == $sw1 {
+    @media screen and ($m: $sw1) {
+      @content
+    }
+  } @else if $canvas == $sw2 {
+    @media screen and ($m: $sw2) {
+      @content
+    }
+  } @else if $canvas == $sw3 {
+    @media screen and ($m: $sw3) {
+      @content
+    }
+  } @else if $canvas == $sw4 {
+    @media screen and ($m: $sw4) {
+      @content
+    }
+  } @else if $canvas == $sw5 {
+    @media screen and ($m: $sw5) {
+      @content
+    }
+  } @else if $canvas == $sw6 {
+    @media screen and ($m: $sw6) {
+      @content
+    }
+  } @else if $canvas == $sw7 {
+    @media screen and ($m: $sw7) {
+      @content
+    }
+  } @else if $canvas == $sw8 {
+    @media screen and ($m: $sw8) {
+      @content
+    }
+  }
+
+}
+
+@mixin linear-gradientY($color1,$color2) {
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $color1 0%, $color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $color1 0%, $color2 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, $color1 0%, $color2 100%); /* W3C */
+}
+
+@mixin linear-gradientX($color1,$color2) {
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color1), color-stop(100%, $color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, $color1 0%, $color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, $color1 0%, $color2 100%); /* Opera 11.10+ */
+  background: linear-gradient(to right, $color1 0%, $color2 100%); /* W3C */
+}
+
+
+

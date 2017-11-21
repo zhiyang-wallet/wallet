@@ -1,0 +1,106 @@
+
+// common
+body{
+  background: #fff;
+  font-family:"PingFang SC","Microsoft Yahei", sans-serif , 'Arial';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.view{
+  background: #fff;
+  max-width: 750px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+
+  -webkit-align-item: center;
+  align-item: center;
+
+  display: -webkit-box;
+  display: box;
+  box-align: center;
+  -webkit-box-align: center;
+
+  & > * {
+    display: block;
+  }
+}
+
+.justify-row {
+
+  display: flex;
+
+  -webkit-align-item: center;
+  align-item: center;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+
+  display: -webkit-box;
+  display: box;
+  box-align: center;
+  -webkit-box-align: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  & > * {
+    display: block;
+  }
+
+}
+
+.back_img{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin{
+  margin: 0 auto;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+@keyframes backOpacity{
+  0%   { opacity: 1 }
+  25%  { opacity: .5 }
+  50%  { opacity: 1 }
+  75%  { opacity: .5 }
+  100% { opacity: 1 }
+}
+
+.animation_opactiy{
+  animation: backOpacity 2s ease-in-out infinite;
+}
+//header
+.header{
+  height:45px;
+  line-height: 45px;
+  font-size: 16px;
+  background:rgba(49,49,49,255) ;
+  text-align: center;
+  color: #fff;
+}
