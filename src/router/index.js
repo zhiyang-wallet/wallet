@@ -10,8 +10,6 @@ const home = r => require.ensure([], () => r(require('../page/home')), 'home');
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
 
-const testPage = r => require.ensure([], () => r(require('../packages/example/test.vue')), 'testPage');
-
 
 Vue.use(Vuerouter);
 
@@ -33,13 +31,7 @@ const routes = [
     path: '/bindBankcard',
     component: bindBankcard,
     name: '绑定银行卡'
-  },
-  {
-    path: '/test',
-    component: testPage,
-    name: '组件测试'
   }
-
 ]
 
 
