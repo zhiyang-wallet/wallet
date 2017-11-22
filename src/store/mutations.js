@@ -1,18 +1,17 @@
 /**
- * Created by mephisto on 2017/9/21.
+ * Created by mephisto
  */
 
 const mutations = {
 
+  GET_SIGNINGUP(state,{res}){
 
-    getCompanyInfo(state, {res}){
+      state.SIGNINGUP = res;
 
-        state.companyData = res;
+  },
+  GET_AllBANKS(state, {res}){
 
-    },
-    getUserInfo(state, {res}){
-
-        state.userInfo = res;
+        state.AllBANKS = res;
 
     }
 

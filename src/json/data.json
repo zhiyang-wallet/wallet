@@ -1,0 +1,90 @@
+{
+  "allBanks":{
+    "retCod" : 0,
+    "data" : {
+      "banks" : [{
+        "bankId" : 1,
+        "bankName" : "中国银行",
+        "singleMaxIn" : "5000",
+        "singleDayMaxIn" : "5000",
+        "singleMaxOut" : "5000",
+        "singleDayMaxOut" : "5000"
+      },{
+        "bankId" : 2,
+        "bankName" : "北京银行",
+        "singleMaxIn" : "5000",
+        "singleDayMaxIn" : "5000",
+        "singleMaxOut" : "5000",
+        "singleDayMaxOut" : "5000"
+      },{
+        "bankId" : 3,
+        "bankName" : "招商银行",
+        "singleMaxIn" : "5000",
+        "singleDayMaxIn" : "5000",
+        "singleMaxOut" : "5000",
+        "singleDayMaxOut" : "5000"
+      }]
+    }
+
+  },
+  "walletBalance":{
+    "retCod" : 0,
+    "data" : {
+      "availableFundUnits" : 222.22,
+      "frozenShare" : 222.22,
+      "totalFundUnits" : 222.22,
+      "curdayIncome" : 222.22,
+      "accumulatedIncome" : 222.22
+    }
+
+  },
+  "yieldRate":{
+    "retCod" : 0,
+    "data" : {
+      "sevenDayYiledRate" : 1212.33,
+      "unitYield" : 213.22,
+      "netWorth" : 1213.232,
+      "netWorthDate" : "12-12-12"
+    }
+
+  },
+  "billDetails":{
+    "retCod" : 0,
+    "data" : {
+      "detailProp" : 0,
+      "details" : [{
+        "amount" : 10000000,
+        "amountDate" : "17-12-12 17:00",
+        "amountType" : "0"
+      }, {
+        "amount" : 10000000,
+        "amountDate" : "17-12-12 17:00",
+        "amountType" : "1"
+      },{
+        "amount" : 10000000,
+        "amountDate" : "17-12-12 17:00",
+        "amountType" : "2"
+      }]
+    }
+  },
+  "userInfo":{
+    "retCod" : 0,
+    "data" : {
+      "loginUserName" : "admin",
+      "walletAssets" : 1234.24,
+      "bankCards" : [{
+        "accountName" : "张三",
+        "bankCardNo" : "1234553234242",
+        "bankName" : "中国银行",
+        "certficateNo" : "214124241412124124",
+        "mobilePhone" : "123455566"
+      },{
+        "accountName" : "张三",
+        "bankCardNo" : "12425353464",
+        "bankName" : "招商银行",
+        "certficateNo" : "214124241412124124",
+        "mobilePhone" : "9734923422"
+      }]
+    }
+  }
+}

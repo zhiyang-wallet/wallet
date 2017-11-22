@@ -2,7 +2,7 @@
  * Created by mephisto on 2017/9/26.
  */
 
-export default  (u = "", d = {}, t = 'get') =>{
+export default  (u = "", t = 'get', d = {}) =>{
 
     let type = t.toUpperCase();
     let url = u;
@@ -39,7 +39,8 @@ export default  (u = "", d = {}, t = 'get') =>{
         }
 
         if (type == 'POST') {
-            Object.defineProperty(requestConfig, 'body', {
+
+          Object.getOwnPropertyNames(data).length != 0 && Object.defineProperty(requestConfig, 'body', {
                 value: JSON.stringify(data)
             })
         }

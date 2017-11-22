@@ -26,6 +26,11 @@ var compiler = webpack(webpackConfig)
 //mock
 
 var api = require('../src/json/data.json')
+var allBanks = api.allBanks
+var walletBalance = api.walletBalance
+var yieldRate = api.yieldRate
+var billDetails = api.billDetails
+var userInfo = api.userInfo
 
 
 var apiRouter = express.Router()
@@ -33,11 +38,38 @@ var apiRouter = express.Router()
 app.use('/api',apiRouter)
 
 
-apiRouter.post('/mobileSuc',function(req,res){
+apiRouter.post('/transaction/allBanks',function(req,res){
 
-    res.json(mobileSuc)
+    res.json(allBanks)
 
 })
+
+apiRouter.post('/transaction/walletBalance',function(req,res){
+
+  res.json(walletBalance)
+
+})
+
+
+apiRouter.post('/transaction/yieldRate',function(req,res){
+
+  res.json(yieldRate)
+
+})
+
+
+apiRouter.post('/transaction/billDetails',function(req,res){
+
+  res.json(billDetails)
+
+})
+
+apiRouter.post('/user/userInfo',function(req,res){
+
+  res.json(userInfo)
+
+})
+
 
 
 // over
