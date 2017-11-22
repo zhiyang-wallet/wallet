@@ -2,12 +2,24 @@
  * Created by mephisto on 2017/9/26.
  */
 
-import apis from '../common/apis';
+import APIS from '../common/apis';
 import $ajax from '../fetch/fetch';
 
 
-//
-export const getLoginInfo = ( data = {} )=> $ajax(apis.getUserInfo, 'POST',data);
 
-//
-export const getCompanyInfo = ( data ={}  ) => $ajax(apis.findOrgInfo,'POST', data);
+//1.用户签约接口
+
+
+
+
+
+
+
+
+/*--------------------------------------------------*/
+//2.选择所属银行接口
+export const getAllBanks = ()=> $ajax(APIS.allBanks, 'POST');
+
+//3.钱包余额接口
+export const getWalletBalance = ()=> $ajax(APIS.walletBalance, 'POST');
+

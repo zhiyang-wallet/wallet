@@ -4,43 +4,32 @@
 
 import $ from 'jquery'
 
-import {getLoginInfo , getCompanyInfo} from '../getData/getData'
+import {getAllBanks, getSigningUp} from '../getData/getData'
 
 const actions = {
-    async getUserInfoApi({commit}, data = {}){
-
-        let response = await getLoginInfo(data);
-
-        return new Promise((resolve, reject)=> {
-
-            if (response.flag == 1) {
-                 commit('getUserInfo', {res: response.user});
-                resolve();
-            } else if (response.flag == 0) {
-                reject();
-            }
-
-        })
+  //1.用户签约接口
+  async getSigningUp({commit}, data = {}) {
 
 
-    },
-    async getCompanyInfoApi({commit}, data = {}){
+  },
+  //2.选择所属银行接口
+  async getAllBanksAPI({commit}, data = {}) {
 
-        let response = await getCompanyInfo();
-        return new Promise((resolve, reject)=> {
+    let response = await getAllBanks(data);
 
-            if (response.success) {
+    return new Promise((resolve, reject) => {
 
-                commit('getCompanyInfo', {res: response.data.result});
-                resolve();
-            } else {
-                reject();
-            }
+      if (response.retCod == 0) {
+        commit('GET_AllBANKS', {res: response.data});
+        resolve();
+      } else if (response.retCod == 1) {
+        reject(response.message);
+      }
+
+    })
 
 
-        })
-
-    }
+  }
 }
 
 export {actions}

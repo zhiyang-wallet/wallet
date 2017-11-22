@@ -1,18 +1,12 @@
 /**
- * Created by mephisto on 2017/9/21.
+ * Created by mephisto
  */
 
 
 export default {
+    SIGNINGUP(state){
 
-    getCompanyData(state){
-        return state.companyData;
-    },
+      return state.signingUp
 
-    getUserInfo(state){
-
-        return state.userInfo
     }
-
-
 }
