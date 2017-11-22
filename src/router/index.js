@@ -10,6 +10,8 @@ const testapi = r => require.ensure([], () => r(require('../page/testapi')), 'te
 
 const home = r => require.ensure([], () => r(require('../page/home')), 'home');
 const addCardMsg = r => require.ensure([], () => r(require('../page/addCardMsg')), 'addCardMsg');
+const setPayPassword = r => require.ensure([], () => r(require('../page/setPayPassword')), 'setPayPassword');
+const turnOutTime = r => require.ensure([], () => r(require('../page/turnOutTime')), 'turnOutTime');
 
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
@@ -40,8 +42,15 @@ const routes = [
   },
   {
     path: '/addCardMsg',
-    component: addCardMsg,
-    name: '填写信息'
+    component: addCardMsg
+  },
+  {
+    path: '/setPayPassword',
+    component: setPayPassword
+  },
+  {
+    path: '/turnOutTime',
+    component: turnOutTime
   },
   {
     path: '/bindBankcard',
