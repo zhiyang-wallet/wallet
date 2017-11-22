@@ -4,14 +4,10 @@
 
 import $ from 'jquery'
 
-import {getAllBanks, getSigningUp} from '../getData/getData'
+import {getAllBanks} from '../getData/getData'
 
 const actions = {
-  //1.用户签约接口
-  async getSigningUp({commit}, data = {}) {
 
-
-  },
   //2.选择所属银行接口
   async getAllBanksAPI({commit}, data = {}) {
 

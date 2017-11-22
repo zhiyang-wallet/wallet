@@ -6,12 +6,7 @@ import APIS from '../common/apis';
 import $ajax from '../fetch/fetch';
 
 
-
 //1.用户签约接口
-
-
-
-
 
 
 
