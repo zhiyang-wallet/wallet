@@ -2,10 +2,12 @@
  * Created by mephisto on 2017/9/26.
  */
 
+import {baseUrl} from "../common/apis";
+
 export default  (u = "", t = 'get', d = {}) =>{
 
     let type = t.toUpperCase();
-    let url = u;
+    let url = baseUrl + u;
     let data = d;
 
     if (type == 'GET') {

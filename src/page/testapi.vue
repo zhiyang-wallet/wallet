@@ -43,7 +43,7 @@
 
       //1.用户签约接口
       getSigningUp({accountName: "", bankCardNo: '', bankId: '', certficateNo: '', mobilePhone: ''}).then(res => {
-        
+
         console.log(res)
 
       })
