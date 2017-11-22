@@ -5,6 +5,6 @@
 
 
 export default {
-   signingUp:null,
+   userInfo:null,
 
 }

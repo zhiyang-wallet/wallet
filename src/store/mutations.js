@@ -4,17 +4,11 @@
 
 const mutations = {
 
-  GET_SIGNINGUP(state,{res}){
+  GET_USERINFO(state,{res}){
 
-      state.SIGNINGUP = res;
+      state.userInfo = res;
 
-  },
-  GET_AllBANKS(state, {res}){
-
-        state.AllBANKS = res;
-
-    }
-
+  }
 
 }
 

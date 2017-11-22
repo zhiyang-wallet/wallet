@@ -86,5 +86,8 @@
         "mobilePhone" : "9734923422"
       }]
     }
+  },
+  "signingUp":{
+    "retCod" : 0
   }
 }

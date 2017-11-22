@@ -4,19 +4,19 @@
 
 import $ from 'jquery'
 
-import {getAllBanks} from '../getData/getData'
+import {getUserInfo} from '../getData/getData'
 
 const actions = {
 
-  //2.选择所属银行接口
-  async getAllBanksAPI({commit}, data = {}) {
+  //8.查询账户信息接口
+  async getUserInfoAPI({commit}, data = {}) {
 
-    let response = await getAllBanks(data);
+    let response = await getUserInfo(data);
 
     return new Promise((resolve, reject) => {
 
       if (response.retCod == 0) {
-        commit('GET_AllBANKS', {res: response.data});
+        commit('GET_USERINFO', {res: response.data});
         resolve();
       } else if (response.retCod == 1) {
         reject(response.message);

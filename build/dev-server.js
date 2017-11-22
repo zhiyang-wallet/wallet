@@ -31,11 +31,17 @@ var walletBalance = api.walletBalance
 var yieldRate = api.yieldRate
 var billDetails = api.billDetails
 var userInfo = api.userInfo
-
+var signingUp = api.signingUp
 
 var apiRouter = express.Router()
 
 app.use('/api',apiRouter)
+
+apiRouter.post('/transaction/signingUp',function(req,res){
+
+  res.json(signingUp)
+
+})
 
 
 apiRouter.post('/transaction/allBanks',function(req,res){

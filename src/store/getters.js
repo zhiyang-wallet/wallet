@@ -4,9 +4,10 @@
 
 
 export default {
-    SIGNINGUP(state){
 
-      return state.signingUp
+   USERINFO(state){
+
+      return state.userInfo;
 
     }
 }
