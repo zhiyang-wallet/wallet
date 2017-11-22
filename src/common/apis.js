@@ -1,11 +1,20 @@
-let urlApi = {
-  'getUserInfo': '/haojihr/anon/getUserInfo.do',
+let apis = {
+  'allBanks': '/transaction/allBanks',
+  'signingUp': '/transaction/signingUp',
+  'walletBalance': '/transaction/walletBalance',
+  'yieldRate': '/transaction/yieldRate',
+  'billDetails':'/transaction/billDetails'
+
 }
 
-let testApi = {
+let mockUrls = {
 
-  'getUserInfo': '/api/loginData',
+  'allBanks': '/api/transaction/allBanks',
+  'signingUp': '/api//transaction/signingUp',
+  'walletBalance': '/api/transaction/walletBalance',
+  'yieldRate': '/api/transaction/yieldRate',
+  'billDetails':'/api/transaction/billDetails'
 }
 
 
-export default process.env == "development" ? testApi : urlApi;
+export default process.env == "development" ? mockUrls : apis;

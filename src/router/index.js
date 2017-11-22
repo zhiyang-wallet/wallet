@@ -5,6 +5,9 @@
 import Vue from 'vue'
 import Vuerouter from 'vue-router'
 
+
+const testapi = r => require.ensure([], () => r(require('../page/testapi')), 'testapi');
+
 const home = r => require.ensure([], () => r(require('../page/home')), 'home');
 
 
@@ -15,6 +18,13 @@ Vue.use(Vuerouter);
 
 
 const routes = [
+  //testapi
+  {
+    path:'/testapi',
+    component:testapi,
+    name:'接口测试'
+
+  },
   //  home
   {
     path: '/',
@@ -32,6 +42,7 @@ const routes = [
     component: bindBankcard,
     name: '绑定银行卡'
   }
+
 ]
 
 

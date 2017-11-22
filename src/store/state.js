@@ -5,6 +5,6 @@
 
 
 export default {
-    userInfo:'',
-    companyData:''
+   signingUp:null,
+
 }
