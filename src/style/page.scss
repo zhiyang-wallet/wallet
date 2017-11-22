@@ -1,0 +1,10 @@
+@import 'variable';
+.mint-header{
+    background-color:$headerBg; 
+    .mint-header-title{
+        color: $white
+    }
+    .mintui-back{
+        color: $white;
+    }
+}

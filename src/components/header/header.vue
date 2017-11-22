@@ -1,26 +1,32 @@
 <template>
-
-  <header class="header">
-      {{headerText}}
-  </header>
-
+  <mt-header fixed :title="title">
+    <router-link :to="backUrl" slot="left">
+      <mt-button icon="back"></mt-button>
+    </router-link>
+  </mt-header>
 </template>
 
 <script type="text/ecmascript-6">
     export default {
-      name:'header',
-      props:['hText'],
-      data(){
-          return{
-            headerText:''
-          }
+      props: {
+        title: {
+          type: String,
+          default: ''
+        },
+        backUrl: {
+          type: String,
+          default: '/'
+        }
       },
-      watch:{
-         "hText":function(n,o){
-            this.headerText = n;
-         }
+      data() {
+        return {
+
+        };
       }
     }
 </script>
+<style lang="scss" rel="stylesheet/scss">
+  @import '../../style/page.scss';
+</style>
 
 
