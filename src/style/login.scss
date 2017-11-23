@@ -1,0 +1,138 @@
+@import "variable";
+@import "page";
+//common
+.vm{
+
+  &-col{
+        position: relative;
+
+  }
+  &-group{
+    width:72%;
+    margin: 0 auto;
+    padding:0px 20px;
+    box-sizing: border-box;
+
+  }
+  &-right{
+    float:right
+  }
+  &-left{
+    float:left
+  }
+
+}
+.default{
+
+  &-checkBox{
+    font-size: 12px;
+    display: inline;
+
+    .mint-checkbox-core{
+      background: transparent;
+      border:1px solid #ccc;
+    }
+    .mint-checklist-title{
+      margin: 0;
+    }
+    .mint-checkbox-core{
+      width: 16px;
+      height:16px;
+      border-radius: 0;
+      &:after{
+        left:5px;
+        top:1px;
+      }
+
+    }
+    .mint-cell{
+      min-height:auto;
+      background: transparent;
+    }
+    .mint-cell-wrapper{
+      padding: 0;
+
+    }
+
+    .mint-checklist-label{
+      padding: 0;
+      font-size: 15px;
+
+    }
+    .mint-checkbox-label{
+      color:#fff;
+      margin: 0;
+    }
+  }
+
+}
+
+
+
+.login{
+
+  &-checkbox{
+    padding:10px 0;
+      a{
+        color:#fff;
+        vertical-align: bottom;
+        font-size: 15px;
+      }
+
+
+  }
+
+
+  &-bg{
+       min-height: 100vh;
+
+       background: {
+         image: url('#{$url}login-bg@2x.jpg');
+         image-set:image-set( "#{$url}login-bg@1x.jpg" 1x, "#{$url}login-bg@2x.jpg" 2x, "#{$url}login-bg@2x.jpg" 600dpi );
+         repeat: no-repeat;
+         size:cover;
+       };
+      padding-top: 26.666%;
+
+  }
+  &-logo{
+      display: block;
+      background: url('#{$url}logo.png') no-repeat center center;
+      background-size: contain;
+      height:36px;
+      overflow: hidden;
+      line-height: 999px;
+  }
+
+
+  &-container{
+
+    background: #fff;
+    padding:10px 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 45px;
+    input{
+      color:#ffc34e;
+      text-indent: 25px;
+
+    }
+    input::-webkit-input-placeholder{
+      color:#ffc34e;
+    }
+
+
+  }
+
+  &-icon{
+
+      width:20px;
+      height:48px;
+      position: absolute;
+      left:0;
+      z-index: 10;
+  }
+
+
+}
+

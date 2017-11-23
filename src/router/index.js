@@ -17,6 +17,7 @@ const billDetail = r => require.ensure([], () => r(require('../page/billDetail')
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
 
+const login = r => require.ensure([], () => r(require('../page/login')), 'login');
 
 Vue.use(Vuerouter);
 
@@ -61,13 +62,19 @@ const routes = [
     path: '/bindBankcard',
     component: bindBankcard,
     name: '绑定银行卡'
+  },
+  {
+    path:'/login',
+    component:login,
+    name:'登陆'
   }
 
 ]
 
 
 const router = new Vuerouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 
