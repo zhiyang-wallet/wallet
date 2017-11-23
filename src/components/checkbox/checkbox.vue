@@ -8,7 +8,7 @@
                         <input type="checkbox" class="mint-checkbox-input" :value="options"> 
                         <span class="mint-checkbox-core"></span>
                     </span>
-                    <span class="mint-checkbox-label">{{options}}</span>
+                    <span class="mint-checkbox-label"><span v-html="options" class="checkbox-a"></span></span>
                 </label>
             </div> 
             <div class="mint-cell-value"><span></span></div>

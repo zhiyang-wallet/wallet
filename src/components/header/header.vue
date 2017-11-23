@@ -1,8 +1,8 @@
 <template>
   <mt-header fixed :title="title">
-    <router-link :to="backUrl" slot="left">
-      <mt-button icon="back"></mt-button>
-    </router-link>
+    <!-- <router-link :to="backUrl" slot="left"> -->
+      <!-- <mt-button icon="back"></mt-button> -->
+    <!-- </router-link> -->
   </mt-header>
 </template>
 

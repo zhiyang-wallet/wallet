@@ -33,16 +33,18 @@
 .mint-field-other{
     width: 30px;
 }
+.mint-cell{
+    height: 58px;
+}
+.mint-cell .mint-cell-wrapper{
+    background-image:none;
+    position: relative;
+    height: 48px;
+    margin-top: 10px;
+}
 .field-cell{
     padding-left:20px;
-    .mint-cell{
-        height: 58px;
-    }
     .mint-cell .mint-cell-wrapper{
-        background-image:none;
-        position: relative;
-        height: 48px;
-        margin-top: 10px;
         &:before{
             content: "";
             position: absolute;
@@ -77,6 +79,26 @@
         background-image: none;
     }
 }
+.cell-show{
+    padding: 0 25px;
+    .mint-cell .mint-cell-wrapper{
+        padding: 0;
+    } 
+    .mint-cell:last-child{
+        background-image: none;
+    } 
+    .mint-cell .mint-cell-wrapper{
+        &:before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: $border;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }  
+}
 .mint-button--primary{
     background-color: $main;
     border-radius: 20px;
@@ -88,7 +110,63 @@
 .mint-checkbox-core{
     border-color: $gray;
 }
-
+.mint-toast{
+    padding: 32px 50px !important;
+    border-radius: 20px;
+    width: 70%;
+}
+.mint-toast-text{
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    line-height: 25px;
+}
+.mint-datetime{
+    width: 96%;
+    border-radius: 10px;
+    padding: 25px 18px;
+    bottom: 25px;
+}
+.mint-datetime-picker{
+    position: relative;
+    .picker-items{
+        margin-bottom: 140px;
+    }
+    .mint-datetime-action{
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+    }
+    .picker-toolbar{
+        border-bottom: none;
+        position: absolute;
+        bottom: 15px;
+        width:100%;
+        height: auto;
+    }
+    .mint-datetime-cancel{
+        background-color: $mainHight;
+    }
+    .mint-datetime-confirm{
+        background-color: $main;
+        margin-top: 15px;
+    }
+    .picker-item{
+        color: #cfcfcf;
+    }
+    .picker-item.picker-selected{
+        color: $main;
+    }
+    .picker-center-highlight:before,.picker-center-highlight:after{
+        background: none;
+    }
+    .picker-center-highlight{
+        border-radius: 10px;
+        background: #989898;
+        z-index: -1;
+    }
+}
 .main{
     margin-top: 40px;
 }
@@ -143,13 +221,14 @@
     margin-left: -64px;
 }
 .password-rule{
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -68px;
     color: $warning;
-    margin-right: 20px;
     font-size: 14px;
     background: none;
     box-shadow: none;
-    float: right;
-    margin-bottom: 15px;
     outline: none;
     &:active:after{
         background-color: $white;
@@ -159,6 +238,7 @@
     background: none;
     box-shadow: none;
     padding: 0;
+    width: 100%;
     &:active:after{
         background-color: $white;
     }
@@ -166,4 +246,16 @@
         font-size: 16px;
         color: $gray;
     }
+}
+.checkbox-a{
+    line-height: 22px;
+    a{
+        color: $link;
+    }
+}
+.bill-in .mint-cell-value span{
+    color: $warning;
+}
+.bill-out .mint-cell-value span{
+    color: $green;
 }

@@ -12,6 +12,7 @@ const home = r => require.ensure([], () => r(require('../page/home')), 'home');
 const addCardMsg = r => require.ensure([], () => r(require('../page/addCardMsg')), 'addCardMsg');
 const setPayPassword = r => require.ensure([], () => r(require('../page/setPayPassword')), 'setPayPassword');
 const turnOutTime = r => require.ensure([], () => r(require('../page/turnOutTime')), 'turnOutTime');
+const billDetail = r => require.ensure([], () => r(require('../page/billDetail')), 'billDetail');
 
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
@@ -51,6 +52,10 @@ const routes = [
   {
     path: '/turnOutTime',
     component: turnOutTime
+  },
+  {
+    path: '/billDetail',
+    component: billDetail
   },
   {
     path: '/bindBankcard',

@@ -1,10 +1,11 @@
 <template>
     <div class="turn-out-time">
-        <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
+        <ryt-header :title="headerTitle"></ryt-header>
         <div class="main">
             <p class="field-title">转出到账户</p>
             <div class="field-cell">
-                <mt-cell title="到账银行" to="" is-link value="请选择到账银行"></mt-cell>
+                <!-- <mt-cell title="到账银行" to="" is-link value="请选择到账银行"></mt-cell> -->
+                <mt-field label="到账银行" placeholder="" v-model="bindCard"></mt-field>
                 <mt-field label="转出金额" placeholder="请输入转出金额"><span>元</span></mt-field>
                 <mt-cell title="转出日期" class="last-cell">
                     <mt-button class="date-btn" v-if="!date" @click.native="open('picker1')">请选择转出时间</mt-button>
@@ -18,7 +19,7 @@
             <mt-button type="primary" class="btn-block btn-center">确认</mt-button>
             <ryt-checkbox :options="checkbox"></ryt-checkbox>
         </div>
-        <mt-datetime-picker ref="picker1" @confirm="handleChange"></mt-datetime-picker>
+        <mt-datetime-picker ref="picker1" type="date" @confirm="handleChange"></mt-datetime-picker>
     </div>
 </template>
 <script>
@@ -33,14 +34,13 @@
         data() {
             return {
                 headerTitle:'定时转出',
-                backUrl: '/',
-                checkbox: '同意定时转入服务协议',
-                date: ''
+                checkbox: '同意定时转出服务协议',
+                date: '',
+                bindCard: '兴业银行 尾号(6599)'
             };
         },
         methods: {
             timeToString(time) {
-                debugger;
                 if (!time) {
                     return '';
                 }
