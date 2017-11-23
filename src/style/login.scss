@@ -39,13 +39,17 @@
   &-defaultBtn{
 
     background: #ffc34e;
-    border-radius: 10px;
+    border-radius: 15px;
+    height: 54px;
+    line-height: 54px;
   }
 
   &-plainBtn{
 
       border-color:#fff!important;
-      border-radius: 10px;
+      border-radius: 15px;
+      height: 54px;
+      line-height: 54px;
 
       label{
         color:#fff!important;
@@ -114,9 +118,7 @@
 
 .login{
 
-  &-btn{
 
-  }
 
   &-checkbox{
     padding:10px 0;
@@ -167,6 +169,8 @@
     input::-webkit-input-placeholder{
       color:#ffc34e;
     }
+
+
 
 
   }

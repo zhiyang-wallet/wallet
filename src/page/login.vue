@@ -1,7 +1,7 @@
 <template>
 
       <div class="login-bg" >
-
+        <svgIcon></svgIcon>
         <a class="login-logo">
           智阳钱包
         </a>
@@ -48,6 +48,7 @@
 </template>
 <script>
 
+  import svgIcon from '../components/common/svg'
 
   export default {
 
@@ -61,7 +62,13 @@
           }
 
 
-        }
+        },
+
+    components:{
+      svgIcon
+
+
+    }
 
   }
 
