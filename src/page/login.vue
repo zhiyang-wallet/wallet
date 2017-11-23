@@ -24,8 +24,8 @@
 
         </div>
 
-        <div class="vm-group clearfix">
-          <div class="login-checkbox">
+        <div class="vm-group">
+          <div class="login-checkbox  clearfix">
               <div class="vm-col vm-left default-checkBox" >
                 <mt-checklist
                   v-model="value"
@@ -37,9 +37,12 @@
           </div>
 
         </div>
+        <div class="vm-btnGroup vm-blockCenter">
+             <mt-button type="primary" class="vm-primaryBtn login-btn vm-defaultBtn">登录</mt-button>
 
-        <mt-button type="primary" class="btn-block btn-center">登录</mt-button>
+                 <mt-button  plain class="vm-primaryBtn vm-plainBtn vm-mt">注册</mt-button>
 
+        </div>
       </div>
 
 </template>

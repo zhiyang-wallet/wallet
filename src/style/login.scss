@@ -1,5 +1,5 @@
 @import "variable";
-@import "page";
+
 //common
 .vm{
 
@@ -21,12 +21,49 @@
     float:left
   }
 
+  &-primaryBtn{
+
+      width: 100%;
+
+  }
+
+  &-btnGroup{
+    width:72%;
+  }
+
+  &-blockCenter{
+    margin: 0 auto;
+
+  }
+
+  &-defaultBtn{
+
+    background: #ffc34e;
+    border-radius: 10px;
+  }
+
+  &-plainBtn{
+
+      border-color:#fff!important;
+      border-radius: 10px;
+
+      label{
+        color:#fff!important;
+      }
+
+  }
+  &-mt{
+    margin-top: 15px;
+  }
+
 }
 .default{
+
 
   &-checkBox{
     font-size: 12px;
     display: inline;
+
 
     .mint-checkbox-core{
       background: transparent;
@@ -48,6 +85,7 @@
     .mint-cell{
       min-height:auto;
       background: transparent;
+      height: auto;
     }
     .mint-cell-wrapper{
       padding: 0;
@@ -63,6 +101,11 @@
       color:#fff;
       margin: 0;
     }
+
+    .mint-cell-wrapper{
+      height: auto;
+      margin: 0;
+    }
   }
 
 }
@@ -71,11 +114,15 @@
 
 .login{
 
+  &-btn{
+
+  }
+
   &-checkbox{
     padding:10px 0;
       a{
         color:#fff;
-        vertical-align: bottom;
+        line-height: 1;
         font-size: 15px;
       }
 
