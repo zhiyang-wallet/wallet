@@ -10,7 +10,7 @@ export default (url = '', type = "get" , data = {})=> {
 
     var type = type.toUpperCase();
     var url = baseUrl+url;
-    
+
     return new Promise((resolve,reject)=>{
 
         $.ajax({type, url, dataType:'json', data,

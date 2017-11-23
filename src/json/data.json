@@ -89,5 +89,26 @@
   },
   "signingUp":{
     "retCod" : 0
+  },
+  "transaction":{"retCod" : 0},
+  "timingTransaction":{
+    "retCod" : 0,
+    "data" : {
+      "timings" : [{
+        "timingId" : 1,
+        "bankCardNo" : "122334444555566666",
+        "amount" : 100000,
+        "monthlyDate" : "12",
+        "circulate" : 1,
+        "remark" : "很不错"
+      },{
+        "timingId" : 2,
+        "bankCardNo" : "1343252532523452",
+        "amount" : 3000,
+        "exactDate" : "17-12-12",
+        "circulate" : 0,
+        "remark" : "确实不错"
+      }]
+    }
   }
 }

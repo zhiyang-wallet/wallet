@@ -55,7 +55,7 @@
     },
     watch: {
       'userInfo': function () {
-        console.log(this.$store.state.userInfo)
+        console.log(this.userInfo)
       }
 
     },
