@@ -1,6 +1,6 @@
 <template>
     <div class="addCardMsg">
-        <ryt-header :title="headerTitle"></ryt-header>
+        <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
         <div class="main">
             <p class="field-title">添加银行卡信息(仅支持借记卡)</p>
             <div class="field-cell">
@@ -30,6 +30,7 @@
         },
         data() {
             return { 
+                backUrl: '/',
                 headerTitle:'填写信息',
                 checkbox: '确认即表示同意<a href="#">《智阳钱包理财账户协议》</a></br><a href="#">《智阳钱包服务协议》</a>'
             };

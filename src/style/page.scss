@@ -101,7 +101,7 @@
 }
 .mint-button--primary{
     background-color: $main;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .mint-checkbox-input:checked + .mint-checkbox-core{
     background-color: $white;
@@ -258,4 +258,56 @@
 }
 .bill-out .mint-cell-value span{
     color: $green;
+}
+.choose-bank{
+    .mint-search{
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        height: 44px;
+    }
+    .mint-searchbar{
+        background: $headerBg;
+    }
+    .mint-searchbar-inner .mintui-search{
+        margin: 2px 5px 0 0;
+    }
+    .mint-indexlist-content{
+        margin-right: 0 !important;
+    }
+    .mint-searchbar-cancel{
+        color: #fff;
+    }
+    .mint-indexlist-nav{
+        position: fixed;
+        top: 80px;
+    }
+    .mint-indexlist-navitem{
+        padding: 4px 6px;
+    }
+    .mint-indexlist{
+        margin-top: 80px;
+    }
+    .mint-search-list{
+        position:fixed;
+        top:84px;
+        padding-top: 0 !important;
+        background-color: rgba(0,0,0,0.2); 
+    }
+    .mint-indexsection-index{
+        background-color: $grayBg; 
+        height: 25px;
+        padding:0 23px;
+        line-height: 25px;
+        font-size: 14px;
+        color: $fontGray;
+    }
+    .mint-cell-wrapper{
+        padding: 0 23px;
+    }
+    .mint-indexsection .mint-cell:last-child{
+        background-image: none;
+    }
 }

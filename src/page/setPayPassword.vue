@@ -1,6 +1,6 @@
 <template>
     <div class="pay-password">
-        <ryt-header :title="headerTitle"></ryt-header>
+        <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
         <div class="main">
             <p class="field-title">请设置您的钱包密码</p>
             <div class="field-cell">
@@ -26,6 +26,7 @@
         data() {
             return {
                 headerTitle:'设置支付密码',
+                backUrl: '/',
                 showNum: false,
                 showConfirmNum: false
             };

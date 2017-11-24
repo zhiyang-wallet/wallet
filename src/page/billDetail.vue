@@ -1,6 +1,6 @@
 <template>
     <div class="bill-details">  
-        <ryt-header :title="headerTitle"></ryt-header>
+        <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
         <div class="main">
             <p class="field-title">近30日账单明细</p>
             <div class="cell-show">
@@ -12,22 +12,18 @@
 </template>
 <script>
   import header from '../components/header/header'
-  import checkbox from '../components/checkbox/checkbox'
-  import { Toast } from 'mint-ui';
     export default {
         components: {
-            'ryt-header': header ,
-            'ryt-checkbox': checkbox
+            'ryt-header': header 
         },
         data() {
             return { 
+                backUrl: '/',
                 headerTitle:'账单明细'
             };
         },
         methods: {
-            showToast() {
-                Toast('您的银行卡信息校验失败，请核实银行卡信息。');
-            }
+            
         }
     };
 </script>

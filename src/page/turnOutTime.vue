@@ -1,6 +1,6 @@
 <template>
     <div class="turn-out-time">
-        <ryt-header :title="headerTitle"></ryt-header>
+        <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
         <div class="main">
             <p class="field-title">转出到账户</p>
             <div class="field-cell">
@@ -36,6 +36,7 @@
                 headerTitle:'定时转出',
                 checkbox: '同意定时转出服务协议',
                 date: '',
+                backUrl: '/',
                 bindCard: '兴业银行 尾号(6599)'
             };
         },

@@ -13,6 +13,7 @@ const addCardMsg = r => require.ensure([], () => r(require('../page/addCardMsg')
 const setPayPassword = r => require.ensure([], () => r(require('../page/setPayPassword')), 'setPayPassword');
 const turnOutTime = r => require.ensure([], () => r(require('../page/turnOutTime')), 'turnOutTime');
 const billDetail = r => require.ensure([], () => r(require('../page/billDetail')), 'billDetail');
+const chooseBank = r => require.ensure([], () => r(require('../page/chooseBank')), 'chooseBank');
 
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
@@ -56,6 +57,10 @@ const routes = [
   {
     path: '/billDetail',
     component: billDetail
+  },
+  {
+    path: '/chooseBank',
+    component: chooseBank
   },
   {
     path: '/bindBankcard',
