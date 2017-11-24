@@ -4,7 +4,7 @@
         <div class="main">
             <mt-search autofocus v-model="value" placeholder="请输入关键字" :result="filterResult"></mt-search>
             <mt-index-list>
-                <mt-index-section v-for="item in alphabet" :index="item.initial">
+                <mt-index-section v-for="item in alphabet" :index="item.initial" >
                 <mt-cell v-for="cell in item.cells" :title="cell"></mt-cell>
                 </mt-index-section>
             </mt-index-list>

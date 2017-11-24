@@ -16,7 +16,7 @@
             <div class="field-cell">
                 <mt-field label="身份证号" placeholder="请输入持卡人身份证号码"></mt-field>
             </div>
-            <mt-button type="primary" class="btn-block btn-center">确认</mt-button>
+            <mt-button type="primary" class="btn-block btn-center" @click.native="showSuccessMsg">确认</mt-button>
             <ryt-checkbox :options="checkbox"></ryt-checkbox>
         </div>
         <mt-datetime-picker ref="picker1" type="date" @confirm="handleChange"></mt-datetime-picker>
@@ -26,6 +26,7 @@
     import header from '../components/header/header'
     import checkbox from '../components/checkbox/checkbox'
     import { Toast } from 'mint-ui';
+    import { MessageBox } from 'mint-ui';
     export default {
         components: {
             'ryt-header': header, 
@@ -61,8 +62,14 @@
                 this.$refs[picker].open();
             },
             handleChange(value) {
-                    this.date = this.timeToString(value);
-                }
+                this.date = this.timeToString(value);
+            },
+            showSuccessMsg() {
+                MessageBox({
+                    title: '转出成功',
+                    message: '您已转出￥1000.00，转出到账时间以银行信息通知为准，请注意查收。'
+                });
             }
+        }
     };
 </script>

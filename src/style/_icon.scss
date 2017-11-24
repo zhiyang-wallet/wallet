@@ -28,6 +28,18 @@
     height: 16px;
     background-position: -2px -65px;
 }
+.ryt-salary{
+    @extend %icon;
+    width: 26px;
+    height: 26px;
+    background-position: -2px -84px;
+}
+.ryt-time{
+    @extend %icon;
+    width: 20px;
+    height: 25px;
+    background-position: -2px -114px;
+}
 @keyframes rotating{
     // 0% {
     //     @include transform(rotate(0deg));

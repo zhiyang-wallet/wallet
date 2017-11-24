@@ -14,6 +14,13 @@ const setPayPassword = r => require.ensure([], () => r(require('../page/setPayPa
 const turnOutTime = r => require.ensure([], () => r(require('../page/turnOutTime')), 'turnOutTime');
 const billDetail = r => require.ensure([], () => r(require('../page/billDetail')), 'billDetail');
 const chooseBank = r => require.ensure([], () => r(require('../page/chooseBank')), 'chooseBank');
+const accountProtocol = r => require.ensure([], () => r(require('../page/accountProtocol')), 'accountProtocol');
+const helpCenter = r => require.ensure([], () => r(require('../page/helpCenter')), 'helpCenter');
+const modifyPayPassword = r => require.ensure([], () => r(require('../page/modifyPayPassword')), 'modifyPayPassword');
+const turnIn = r => require.ensure([], () => r(require('../page/turnIn')), 'turnIn');
+const turnInTime = r => require.ensure([], () => r(require('../page/turnInTime')), 'turnInTime');
+const set = r => require.ensure([], () => r(require('../page/set')), 'set');
+const findPayPassword = r => require.ensure([], () => r(require('../page/findPayPassword')), 'findPayPassword');
 
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
@@ -64,6 +71,34 @@ const routes = [
     component: chooseBank
   },
   {
+    path: '/accountProtocol',
+    component: accountProtocol
+  },
+  {
+    path: '/helpCenter',
+    component: helpCenter
+  },
+  {
+    path: '/modifyPayPassword',
+    component: modifyPayPassword
+  },
+  {
+    path: '/turnIn',
+    component: turnIn
+  },
+  {
+    path: '/turnInTime',
+    component: turnInTime
+  },
+  {
+    path: '/set',
+    component: set
+  },
+  {
+    path: '/findPayPassword',
+    component: findPayPassword
+  },
+  {
     path: '/bindBankcard',
     component: bindBankcard,
     name: '绑定银行卡'
@@ -78,8 +113,8 @@ const routes = [
 
 
 const router = new Vuerouter({
-  routes,
-  mode: 'history'
+  routes
+  // mode: 'history'
 })
 
 

@@ -1,28 +1,38 @@
 <template>
     <div class="account-protocol">
-
+        <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
+        <div class="main">
+            <div class="bank-pro">
+                <p> 兴业银行的银银平台理财门户为申请人提供贵金属买卖、基金产品代销、理财产品销售、银证转账等丰富的财富管理服务。为更好的规范本项业务开展，双方订立如下协议：</p>
+                <p>第一条 申请人自愿在兴业银行开立专用于银银平台理财门户业务的理财账户，该账户专门用于申请人银银平台理财门户相关产品的资金清算，不具有其它支付结算功能。</p>
+                <p>第二条 申请人必须在兴业银行指定的银行范围内选择绑定其他银行结算账户，该银行结算账户应由申请人事先在其他银行开立，理财账户与该银行结算账户之间是唯一对应的关系。</p>
+                <p>第三条 为确保资金安全，理财账户的资金进出仅支持与绑定的银行结算账户进行资金定向转账。</p>
+                <p>第四条 申请人在兴业银行开立、使用的个人理财账户，应遵守兴业银行相关银行账户管理规定，不得利用理财门户从事违法活动。</p>
+                <p>第五条 若申请人需要变更开立在兴业银行的理财账户信息，应根据兴业银行个人银行结算账户相关管理办法办理。</p>
+                <p>第六条 下列情形之一的，兴业银行可要求申请人限期纠正，申请人不能按期纠正或拒不纠正的，经兴业银行认可后，可终止本协议：</p>
+                <p>1、兴业银行发现申请人向其提供的资料、证件严重失实；</p>
+                <p>2、申请人有严重损害兴业银行合法权益、影响其正常经营秩序的行为；</p>
+                <p>3、申请人的资金来源不合法；</p>
+                <p>4、监管部门认定的其他情形。</p>
+                <p>第七条 在协议履行期间所发生双方任何一方的违约情况，双方应按照法律、法规等有关规定及本协议规定协商解决。由此造成经济损失的，则由违约方承担赔偿责任。</p>
+             </div>
+        </div>
     </div>
 </template>
 <script>
     import header from '../components/header/header'
-  import checkbox from '../components/checkbox/checkbox'
   import { Toast } from 'mint-ui';
     export default {
         components: {
-            'ryt-header': header ,
-            'ryt-checkbox': checkbox
+            'ryt-header': header 
         },
         data() {
             return { 
                 backUrl: '/',
-                headerTitle:'填写信息',
-                checkbox: '确认即表示同意<a href="#">《智阳钱包理财账户协议》</a></br><a href="#">《智阳钱包服务协议》</a>'
+                headerTitle:'银银平台理财账户申请开通电子协议'
             };
         },
         methods: {
-            showToast() {
-                Toast('您的银行卡信息校验失败，请核实银行卡信息。');
-            }
         }
     };
 </script>

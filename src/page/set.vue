@@ -1,23 +1,7 @@
 <template>
-  <div class="wallet-home">
+  <div class="wallet-home set">
       <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
       <div class="main">
-          <div class="home-top">
-              <p>昨日收益(元)</p>
-              <h2>10.09</h2>
-              <p>总金额5010.09(元)</p>
-              <i class="ryt-salary"></i>
-          </div>
-          <div class="home-middle">
-              <p>
-                <span>累计收益 (元)</span>
-                <span>200.09</span>
-              </p>
-              <p>
-                <span>七日年化 (%)</span>
-                <span>3.9</span>
-              </p>
-          </div>
           <div class="home-list">
               <mt-cell title="转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
                 <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
@@ -48,7 +32,7 @@
         data() {
             return { 
                 backUrl: '/',
-                headerTitle:'智阳钱包'
+                headerTitle:'设置'
             };
         },
         methods: {
