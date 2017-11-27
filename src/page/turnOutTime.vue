@@ -28,11 +28,12 @@
         <div class="dialog-msg" v-if="showMsg">
             <div class="box">
                 <div class="msg-icon">
-                    <i class="success"></i>
+                    <i class="success ryt-success"></i>
                 </div>
                 <h3>转出成功</h3>
-                <p>您已转出<b>￥1000.00</b>,转出到账时间以银行信息通知为准，请注意查收。</p>
+                <p class="msg">您已转出<b>￥1000.00</b>,转出到账时间以银行信息通知为准，请注意查收。</p>
                 <mt-button type="primary" class="btn-block btn-center" @click="close">确定</mt-button>
+                <i class="ryt-close-modal close-modal" @click="close"></i>
             </div>
         </div>
     </div>
@@ -95,3 +96,6 @@
         }
     };
 </script>
+<style lang="scss" rel="stylesheet/scss">
+  @import '../style/_icon.scss';
+</style>

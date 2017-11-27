@@ -3,20 +3,20 @@
       <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
       <div class="main">
           <div class="home-list">
-              <mt-cell title="转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+              <mt-cell title="修改支付密码" icon="more" is-link :to="{ name: 'addCardMsg' }">
+                <img slot="icon" src="../../static/images/modify-pay-password.png" width="24" height="26">
               </mt-cell>
-              <mt-cell title="转出" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+              <mt-cell title="找回支付密码" icon="more" is-link :to="{ name: 'addCardMsg' }">
+                <img slot="icon" src="../../static/images/find-pay-password.png" width="24" height="28">
               </mt-cell>
-              <mt-cell title="定时转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+              <mt-cell title="修改登录密码" icon="more" is-link :to="{ name: 'addCardMsg' }">
+                <img slot="icon" src="../../static/images/modify-login-password.png" width="24" height="26">
               </mt-cell>
-              <mt-cell title="定时转出" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+              <mt-cell title="找回登录密码" icon="more" is-link :to="{ name: 'addCardMsg' }">
+                <img slot="icon" src="../../static/images/find-login-password.png" width="24" height="28">
               </mt-cell>
-              <mt-cell title="账单明细" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+              <mt-cell title="帮助中心" icon="more" is-link :to="{ name: 'addCardMsg' }">
+                <img slot="icon" src="../../static/images/help.png" width="24" height="24">
               </mt-cell>
           </div>
       </div>

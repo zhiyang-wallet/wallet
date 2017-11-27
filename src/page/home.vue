@@ -20,19 +20,19 @@
           </div>
           <div class="home-list">
               <mt-cell title="转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/turn-in.png" width="24" height="24">
               </mt-cell>
               <mt-cell title="转出" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/turn-out.png" width="24" height="24">
               </mt-cell>
               <mt-cell title="定时转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/turn-in-time.png" width="28" height="24">
               </mt-cell>
               <mt-cell title="定时转出" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/turn-out-time.png" width="26" height="24">
               </mt-cell>
               <mt-cell title="账单明细" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/bill-detail.png" width="24" height="24">
               </mt-cell>
           </div>
       </div>

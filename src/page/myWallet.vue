@@ -15,11 +15,23 @@
         </div>
         <div class="wallet-list">
              <mt-cell title="我的银行卡" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/bank-card.png" width="24" height="24">
               </mt-cell> 
               <mt-cell title="设置" icon="more" is-link :to="{ name: 'addCardMsg' }">
-                <img slot="icon" src="../../static/images/logo.png" width="24" height="24">
+                <img slot="icon" src="../../static/images/set.png" width="24" height="24">
               </mt-cell>              
+        </div>
+        <mt-button type="primary" class="btn-block btn-center sing-out" @click="singOut">安全退出</mt-button>
+        <div class="dialog-msg" v-if="showMsg">
+            <div class="box">
+                <div class="msg-icon">
+                    <i class="ryt-sign-out sign-out-icon"></i>
+                </div>
+                <h3>确认退出登录？</h3>
+                <mt-button type="primary" class="btn-block btn-center" @click="close">确定</mt-button>
+                <mt-button type="primary" class="btn-block btn-center cancle" @click="close">取消</mt-button>
+                <i class="ryt-close-modal close-modal" @click="close"></i>
+            </div>
         </div>
     </div>
 </template>
@@ -32,10 +44,20 @@
         data() {
             return {
                 headerTitle:'我的钱包',
-                backUrl: '/'
+                backUrl: '/',
+                showMsg: false
             };
         },
         methods: {
+            singOut() {
+                this.showMsg = true;
+            },
+            close() {
+                this.showMsg = false;
+            }
         }
     };
 </script>
+<style lang="scss" rel="stylesheet/scss">
+  @import '../style/_icon.scss';
+</style>
