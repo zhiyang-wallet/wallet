@@ -1,13 +1,25 @@
 @import "variable";
 
 //common
+
+.mint-cell:last-child{
+  background-image: none;
+}
 .vm{
+
+
 
   &-wrap{
       min-height:100vh;
       background: #fff;
 
   }
+  &-bg{
+    &_01{
+      background: #eeeeee;
+    }
+  }
+
   &-col{
         position: relative;
 
@@ -285,4 +297,56 @@
           position: center center;
         };
   }
+}
+
+.accumulated{
+    &-top{
+      background: #fff;
+      position: relative;
+      z-index: 1;
+     padding: 50px 0;
+      text-align: center;
+      .txt{
+        &1{
+
+          font-size: 16px;
+          color:#838383;
+          line-height: 1;
+
+        }
+        &2{
+          color:#ffc34e;
+          font-size: 36px;
+          line-height: 1;
+          padding: 10px ;
+        }
+      }
+    }
+     &-list{
+        background: #f5f5f5;
+       padding-top: 14px;
+       overflow: hidden;
+     }
+    &-item{
+        background: #fff;
+        margin-bottom: 15px;
+        font-size: 15px;
+      &:first-child{
+        .bar{
+          background: #ffc34e;
+        }
+
+      }
+        .bar{
+          overflow: hidden;
+          line-height: 1;
+          padding: 5px 0;
+          background:#a3a6b2;
+
+          span{
+              padding: 0 20px;
+            color:#fff;
+          }
+        }
+    }
 }

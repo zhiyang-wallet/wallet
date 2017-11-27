@@ -18,17 +18,32 @@
       export default {
 
         data(){
-
             return{
               val:'获取短信验证码',
-              btnState:true,
-              stop:false
-
+              stop:false,
+              times:60
             }
         },
 
         methods:{
+           loop(){
 
+              let times = this.times;
+              let timer = setInterval(function(){
+
+                  times--;
+                  this.val = times + 's后重新获取' ;
+                  if(times <= 0 ){
+                    clearInterval(timer);
+                    this.stop = false;
+                    this.val = '获取短信验证码';
+
+                  }
+
+              }.bind(this),1000)
+
+
+            },
             handleClick(){
 
 
@@ -36,11 +51,9 @@
                         let retCod = this.sendCode.retCod;
 
                           if(retCod == 0 ){
-
                               this.stop = true;
-
+                              this.loop();
                           }else{
-
 
                           }
 
@@ -63,7 +76,6 @@
 </script>
 
 <style lang="scss" rel="stylesheet/scss">
-
 
 
 

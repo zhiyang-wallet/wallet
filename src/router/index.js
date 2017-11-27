@@ -29,6 +29,7 @@ const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankca
 const login = r => require.ensure([], () => r(require('../page/login')), 'login');
 const register = r => require.ensure([], () => r(require('../page/register')), 'register');
 const registerSuccess = r => require.ensure([], () => r(require('../page/registerSuccess')), 'registerSuccess');
+const accumulated = r => require.ensure([], () => r(require('../page/accumulated')), 'accumulated');
 Vue.use(Vuerouter);
 
 
@@ -123,6 +124,11 @@ const routes = [
     path:'/register_success',
     component:registerSuccess,
     name:'注册成功'
+  },
+  {
+    path:'/accumulated',
+    component:accumulated,
+    name:'累计收益'
   }
 
 

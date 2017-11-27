@@ -65,19 +65,11 @@
     },
     data() {
       return {
-        backUrl: '/',
+        backUrl: '/login',
         headerTitle:'注册信息'
       };
     },
     methods: {
-    },
-    watch:{
-
-      "$route"(o,n){
-
-
-      }
-
     }
   };
 </script>
