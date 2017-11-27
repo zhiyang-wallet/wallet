@@ -21,6 +21,7 @@ const turnIn = r => require.ensure([], () => r(require('../page/turnIn')), 'turn
 const turnInTime = r => require.ensure([], () => r(require('../page/turnInTime')), 'turnInTime');
 const set = r => require.ensure([], () => r(require('../page/set')), 'set');
 const findPayPassword = r => require.ensure([], () => r(require('../page/findPayPassword')), 'findPayPassword');
+const myWallet = r => require.ensure([], () => r(require('../page/myWallet')), 'myWallet');
 
 
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
@@ -104,6 +105,10 @@ const routes = [
     name: '绑定银行卡'
   },
   {
+    path: '/myWallet',
+    component: myWallet
+  },
+  {
     path:'/login',
     component:login,
     name:'登陆'
@@ -113,8 +118,8 @@ const routes = [
 
 
 const router = new Vuerouter({
-  routes
-  // mode: 'history'
+  routes,
+  mode: 'history'
 })
 
 

@@ -14,6 +14,20 @@
             <mt-button type="primary" class="btn-block btn-center" @click="showToast">确认</mt-button>
             <mt-button class="password-rule" @click.native="showRule">支付密码注意事项</mt-button>
         </div>
+        <div class="dialog-msg" v-if="showMsg">
+            <div class="box">
+                <div class="msg-icon">
+                    <i class="success"></i>
+                </div>
+                <h3>支付密码注意事项</h3>
+                <p>1、请输入6位数字密码。</p>
+                <p>2、钱包密码将用于您转入、转出钱包余额等过程中。</p>
+                <p>3、请您妥善保管您的钱包密码</p>
+                <mt-button class="close-msg">
+                    <img src="/static/images/logo.png" height="20" width="20" slot="icon" @click="close">
+                </mt-button>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -27,7 +41,9 @@
         data() {
             return {
                 headerTitle:'找回支付密码',
-                backUrl: '/'
+                backUrl: '/',
+                showMsg: false
+
             };
         },
         methods: {
@@ -39,7 +55,10 @@
                 });
             },
             showToast() {
-                Toast('密码输入有误，请输入6位数字密码');
+                this.showMsg = true;
+            },
+            close() {
+                this.showMsg = false;
             }
         }
     };

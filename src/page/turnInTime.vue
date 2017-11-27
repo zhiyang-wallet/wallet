@@ -30,7 +30,7 @@
         <div class="choose-date-time" v-show="showPicker">
             <mt-picker :slots="slot"  @change="onYearChange" :visible-item-count="3"></mt-picker>
             <div class="btns">
-                <mt-button type="primary" class="btn-block btn-center" @click="close">确定</mt-button>
+                <mt-button type="primary" class="btn-block btn-center" @click="sure">确定</mt-button>
                 <mt-button type="primary" class="btn-block btn-center btn-cancel" @click="close">取消</mt-button>
             </div>
         </div>
@@ -51,6 +51,7 @@
                 backUrl: '/',
                 checkbox: '同意定时转入服务协议',
                 date: '',
+                centerDate: '',
                 showPicker: false
             };
         },
@@ -88,9 +89,13 @@
                 this.showPicker = true;
             },
             onYearChange(picker, values) {
-                this.date = values[0];
+                this.centerDate = values[0];
             },
             close() {
+                this.showPicker = false;
+            },
+            sure() {
+                this.date = this.centerDate;
                 this.showPicker = false;
             }
         }

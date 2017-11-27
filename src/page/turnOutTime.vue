@@ -4,12 +4,11 @@
         <div class="main">
             <p class="field-title">转出到账户</p>
             <div class="field-cell">
-                <!-- <mt-cell title="到账银行" to="" is-link value="请选择到账银行"></mt-cell> -->
                 <mt-field label="到账银行" placeholder="" v-model="bindCard"></mt-field>
                 <mt-field label="转出金额" placeholder="请输入转出金额"><span>元</span></mt-field>
                 <mt-cell title="转出日期" class="last-cell">
-                    <mt-button class="date-btn" v-if="!date" @click.native="open('picker1')">请选择转出时间</mt-button>
-                    <mt-button class="date-btn" v-if="date" @click.native="open('picker1')">{{date}}</mt-button>
+                    <mt-button class="date-btn" v-if="!date" @click.native="open">请选择转出时间</mt-button>
+                    <mt-button class="date-btn" v-if="date" @click.native="open">{{date}}</mt-button>
                 </mt-cell>
             </div>
             <p class="field-title">备注</p>
@@ -19,7 +18,23 @@
             <mt-button type="primary" class="btn-block btn-center" @click.native="showSuccessMsg">确认</mt-button>
             <ryt-checkbox :options="checkbox"></ryt-checkbox>
         </div>
-        <mt-datetime-picker ref="picker1" type="date" @confirm="handleChange"></mt-datetime-picker>
+        <div class="choose-date-time" v-show="showPicker">
+            <mt-picker :slots="slot"  @change="onYearChange" :visible-item-count="3"></mt-picker>
+            <div class="btns">
+                <mt-button type="primary" class="btn-block btn-center" @click="sure">确定</mt-button>
+                <mt-button type="primary" class="btn-block btn-center btn-cancel" @click="closeDate">取消</mt-button>
+            </div>
+        </div>
+        <div class="dialog-msg" v-if="showMsg">
+            <div class="box">
+                <div class="msg-icon">
+                    <i class="success"></i>
+                </div>
+                <h3>转出成功</h3>
+                <p>您已转出<b>￥1000.00</b>,转出到账时间以银行信息通知为准，请注意查收。</p>
+                <mt-button type="primary" class="btn-block btn-center" @click="close">确定</mt-button>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -37,38 +52,45 @@
                 headerTitle:'定时转出',
                 checkbox: '同意定时转出服务协议',
                 date: '',
+                centerDate: '',
                 backUrl: '/',
-                bindCard: '兴业银行 尾号(6599)'
+                bindCard: '兴业银行 尾号(6599)',
+                showMsg: false,
+                showPicker: false
             };
         },
-        methods: {
-            timeToString(time) {
-                if (!time) {
-                    return '';
+        computed: {
+            slot() {
+                var arr = [];
+                for(var i=1; i<29; i++) {
+                    arr.push('每月'+ i +'日');
                 }
-                var mo = (time.getMonth()+1),
-                    d = time.getDate(),
-                    m = time.getMinutes(),
-                    h = time.getHours(),
-                    s = time.getSeconds();
-                mo = mo < 10 ? ('0'+mo) : mo;
-                d = d < 10 ? ('0'+d) : d;
-                m = m < 10 ? ('0'+m) : m;
-                h = h < 10 ? ('0'+h) : h;
-                s = s < 10 ? ('0'+s ) : s;
-                return time.getFullYear() + "-" + mo + "-" + d + " " + h + ":" + m + ":" + s;
-            },
+                return [{
+                    flex: 1,
+                    values: arr,
+                    className: 'slot1'
+                }]
+            }
+        },
+        methods: {
             open(picker) {
-                this.$refs[picker].open();
-            },
-            handleChange(value) {
-                this.date = this.timeToString(value);
+                this.showPicker = true;
             },
             showSuccessMsg() {
-                MessageBox({
-                    title: '转出成功',
-                    message: '您已转出￥1000.00，转出到账时间以银行信息通知为准，请注意查收。'
-                });
+                this.showMsg = true;
+            },
+            close() {
+                this.showMsg = false;
+            },
+            sure() {
+                this.date = this.centerDate;
+                this.showPicker = false;
+            },
+            closeDate() {
+                this.showPicker = false;
+            },
+            onYearChange(picker, values) {
+                this.centerDate = values[0];
             }
         }
     };
