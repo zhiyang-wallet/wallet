@@ -41,9 +41,7 @@
              <mt-button type="primary" class="vm-primaryBtn login-btn vm-defaultBtn">登录</mt-button>
 
           <router-link to="/register">
-                 <mt-button  plain class="vm-primaryBtn vm-plainBtn vm-mt"
-                      v-on:click.native="linkRegister"
-                 >注册</mt-button>
+                 <mt-button  plain class="vm-primaryBtn vm-plainBtn vm-mt">注册</mt-button>
           </router-link>
         </div>
       </div>
