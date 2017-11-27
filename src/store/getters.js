@@ -9,5 +9,11 @@ export default {
 
       return state.userInfo;
 
-    }
+    },
+
+   SENDCODE(state){
+
+      return state.sendCode;
+
+   }
 }
