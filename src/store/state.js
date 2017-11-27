@@ -6,5 +6,6 @@
 
 export default {
    userInfo:null,
+   sendCode:''
 
 }

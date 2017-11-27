@@ -28,3 +28,5 @@ export const getYieldRate = () => $ajax(APIS.yieldRate, 'POST');
 
 //7.账单明细
 export const getBillDetails = () => $ajax(APIS.billDetails, 'POST');
+
+

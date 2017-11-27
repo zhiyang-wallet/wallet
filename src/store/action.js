@@ -4,7 +4,7 @@
 
 import $ from 'jquery'
 
-import {getUserInfo} from '../getData/getData'
+import {getUserInfo,getSigningUp} from '../getData/getData'
 
 const actions = {
 
@@ -25,7 +25,24 @@ const actions = {
     })
 
 
+  },
+
+  //发送验证码
+
+  async getSendCodeAPI({commit},data = {}){
+
+
+      let response = await getSigningUp(data);
+      return new Promise((resolve,reject) => {
+
+             commit("GET_SENDCODE",{res:response});
+             response.retCod == 0?resolve():reject();
+
+      })
+
+
   }
+
 }
 
 export {actions}

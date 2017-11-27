@@ -27,7 +27,8 @@ const myWallet = r => require.ensure([], () => r(require('../page/myWallet')), '
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
 
 const login = r => require.ensure([], () => r(require('../page/login')), 'login');
-
+const register = r => require.ensure([], () => r(require('../page/register')), 'register');
+const registerSuccess = r => require.ensure([], () => r(require('../page/registerSuccess')), 'registerSuccess');
 Vue.use(Vuerouter);
 
 
@@ -112,14 +113,25 @@ const routes = [
     path:'/login',
     component:login,
     name:'登陆'
+  },
+  {
+    path:'/register',
+    component: register,
+    name:'注册'
+  },
+  {
+    path:'/register_success',
+    component:registerSuccess,
+    name:'注册成功'
   }
+
 
 ]
 
 
 const router = new Vuerouter({
-  routes,
-  mode: 'history'
+   routes,
+   mode: 'history'
 })
 
 

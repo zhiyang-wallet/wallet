@@ -8,6 +8,11 @@ const mutations = {
 
       state.userInfo = res;
 
+  },
+  GET_SENDCODE(state,{res}){
+
+      state.sendCode = res;
+
   }
 
 }

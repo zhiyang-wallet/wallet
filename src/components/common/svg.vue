@@ -24,10 +24,10 @@
                 stroke-width="3px"
                 d="M28,2c9.384,0,16.992,7.608,16.992,16.992v6.016  C44.992,25.059,37.384,25,28,25c-7.542,0-13.936,0.038-16.156,0.026c-0.542-0.002-0.836-0.008-0.836-0.019v-6.016  C11.008,9.608,18.616,2,28,2z"/>
 
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a"
                 d="M28.512,37c1.931,0,3.496,1.565,3.496,3.496s-1.565,3.496-3.496,3.496
         s-3.496-1.565-3.496-3.496S26.581,37,28.512,37z"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a"
                 d="M28.75,40c0.829,0,1.5,0.671,1.5,1.5v8c0,0.829-0.671,1.5-1.5,1.5
         s-1.5-0.671-1.5-1.5v-8C27.25,40.671,27.921,40,28.75,40z"/>
 
@@ -46,10 +46,10 @@
                 stroke-width="3px"
                 d="M28,2c9.384,0,16.992,7.608,16.992,16.992v6.016  C44.992,25.059,37.384,25,28,25c-7.542,0-13.936,0.038-16.156,0.026c-0.542-0.002-0.836-0.008-0.836-0.019v-6.016  C11.008,9.608,18.616,2,28,2z"/>
 
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a"
                 d="M28.512,37c1.931,0,3.496,1.565,3.496,3.496s-1.565,3.496-3.496,3.496
         s-3.496-1.565-3.496-3.496S26.581,37,28.512,37z"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a"
                 d="M28.75,40c0.829,0,1.5,0.671,1.5,1.5v8c0,0.829-0.671,1.5-1.5,1.5
         s-1.5-0.671-1.5-1.5v-8C27.25,40.671,27.921,40,28.75,40z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"
@@ -62,8 +62,8 @@
         </g>
       </symbol>
 
-
-      <symbol viewBox="0 0 55 66" id="SendCodeIcon">
+s
+      <symbol viewBox="0 0 55 66" id="sendCodeIcon">
         <g>
           <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"
                 d="M39.999,35.124c4.24,2.818,8.427,9.041,10.386,13.911
@@ -88,10 +88,10 @@
           <path fill-rule="evenodd" clip-rule="evenodd" fill="none"  stroke="#fda43a" stroke-width="3px" d="M11.219,0.983h29.893c2.144,0,3.882,1.736,3.882,3.877v49.246
 	c0,2.141-1.738,3.877-3.882,3.877H11.219c-2.145,0-3.882-1.736-3.882-3.877V4.861C7.337,2.72,9.075,0.983,11.219,0.983z"/>
           <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a"  d="M19.76,6.412h12.423v1.939H19.76V6.412z"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a"   d="M26.166,47.515c1.608,0,2.912,1.302,2.912,2.908
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px"  d="M26.166,47.515c1.608,0,2.912,1.302,2.912,2.908
 	c0,1.606-1.303,2.908-2.912,2.908c-1.608,0-2.912-1.302-2.912-2.908C23.254,48.817,24.558,47.515,26.166,47.515z"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a" d="M5.007,13.392h2.33v4.266h-2.33V13.392z"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#fda43a" d="M5.007,18.433h2.33v4.266h-2.33V18.433z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px" d="M5.007,13.392h2.33v4.266h-2.33V13.392z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#fda43a" stroke-width="3px" d="M5.007,18.433h2.33v4.266h-2.33V18.433z"/>
 
 
         </g>
