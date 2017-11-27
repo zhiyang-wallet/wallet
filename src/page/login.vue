@@ -9,16 +9,16 @@
         <div class="login-container vm-group" >
 
             <div class="vm-col">
-              <svg class="login-icon">
-                <use xlink:href="#useIcon"></use>
-              </svg>
+              <div class="login-icon ryt-user vm-icon">
+
+              </div>
                   <mt-field  placeholder="请输入用户名"  v-model="username"></mt-field>
             </div>
 
             <div class="vm-col">
-              <svg class="login-icon">
-                <use xlink:href="#passwrodIcon"></use>
-              </svg>
+              <div class="password-icon ryt-password  vm-icon">
+
+              </div>
                <mt-field  placeholder="请输入密码" type="password" v-model="password"></mt-field>
             </div>
 

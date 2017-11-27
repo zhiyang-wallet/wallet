@@ -3,40 +3,35 @@
         <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
         <div class="main register-container">
           <div class="vm-col">
-            <svg class="login-icon">
-              <use xlink:href="#useIcon"></use>
-            </svg>
+            <div class="login-icon ryt-user  vm-icon"></div>
             <mt-field  placeholder="请输入用户名" ></mt-field>
           </div>
 
           <div class="vm-col">
-            <svg class="login-icon">
-              <use xlink:href="#passwrodIcon"></use>
-            </svg>
+            <div class="password-icon ryt-password   vm-icon">
+
+            </div>
             <mt-field   placeholder="请输入6-18位登录密码" type="password" ></mt-field>
           </div>
 
 
           <div class="vm-col">
-            <svg class="login-icon">
-              <use xlink:href="#rePasswrodIcon"></use>
-            </svg>
+            <div class="password-icon ryt-password-confirm vm-icon">
+            </div>
             <mt-field   placeholder="请确认密码" type="password" ></mt-field>
           </div>
 
 
           <div class="vm-col">
-            <svg class="login-icon">
-              <use xlink:href="#mobileIcon"></use>
-            </svg>
+            <div class="password-icon ryt-mobile vm-icon">
+            </div>
             <mt-field   placeholder="请输入手机号" type="tel" ></mt-field>
           </div>
 
 
           <div class="vm-col">
-            <svg class="login-icon">s
-              <use xlink:href="#sendCodeIcon"></use>
-            </svg>
+            <div class="password-icon ryt-Verification vm-icon">
+            </div>
             <mt-field   placeholder="请输入短信验证码" type="text" ></mt-field>
             <v-sendCode></v-sendCode>
           </div>
