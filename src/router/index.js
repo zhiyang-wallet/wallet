@@ -26,6 +26,7 @@ const findPayPassword = r => require.ensure([], () => r(require('../page/findPay
 const bindBankcard = r => require.ensure([], () => r(require('../page/bindBankcard')), 'bindBankcard');
 
 const login = r => require.ensure([], () => r(require('../page/login')), 'login');
+const register = r => require.ensure([], () => r(require('../page/register')), 'register');
 
 Vue.use(Vuerouter);
 
@@ -107,14 +108,20 @@ const routes = [
     path:'/login',
     component:login,
     name:'登陆'
+  },
+  {
+    path:'/register',
+    component: register,
+    name:'注册'
   }
+
 
 ]
 
 
 const router = new Vuerouter({
-  routes
-  // mode: 'history'
+   routes,
+   mode: 'history'
 })
 
 

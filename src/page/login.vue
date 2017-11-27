@@ -70,6 +70,6 @@
 </script>
 <style lang="scss" rel="stylesheet/scss">
 
-  @import "../style/login";
+  @import "../style/vm";
 
 </style>
