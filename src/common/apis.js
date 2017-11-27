@@ -8,6 +8,9 @@ export const APIS =  {
   'walletBalance':'/transaction/walletBalance',
   'yieldRate': '/transaction/yieldRate',
   'billDetails':'/transaction/billDetails',
-  'userInfo':'/user/userInfo'
+  'userInfo':'/user/userInfo',
+  'login':'/user/login',
+  'register':'/user/register',
+  'passwordManage':'/user/passwordManage'
 }
 

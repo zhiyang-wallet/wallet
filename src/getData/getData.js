@@ -30,3 +30,11 @@ export const getYieldRate = () => $ajax(APIS.yieldRate, 'POST');
 export const getBillDetails = () => $ajax(APIS.billDetails, 'POST');
 
 
+//9.用户登录接口
+export const getLogin = (data = {}) => $ajax(APIS.login, 'POST', data);
+
+//10.用户注册接口
+export const register = (data = {}) => $ajax(APIS.register, 'POST', data);
+
+//11.密码接口
+export const passwordManage = (data = {}) => $ajax(APIS.passwordManage, 'POST', data);
