@@ -3,6 +3,11 @@
 //common
 .vm{
 
+  &-wrap{
+      min-height:100vh;
+      background: #fff;
+
+  }
   &-col{
         position: relative;
 
@@ -115,7 +120,7 @@
 }
 
 
-
+//login
 .login{
 
 
@@ -187,3 +192,43 @@
 
 }
 
+//register
+
+.register{
+  &-container{
+    background: #fff;
+    padding-left: 10%;
+    svg{
+      margin-top: 5px;
+    }
+
+    .mint-cell-wrapper{
+      padding: 0 0px 0 25px;
+    }
+
+    .mint-cell-value{
+      border-bottom:1px solid #e3e3e3;
+      margin-left:5%;
+      padding-bottom: 10px;
+    }
+
+  }
+
+
+}
+
+.sendCode{
+  position: absolute;
+  right:5%;
+  bottom:15px;
+    label{
+      font-size: 14px;
+    }
+  .mint-button{
+      height:auto;
+    line-height: 30px;
+  }
+
+
+
+}
