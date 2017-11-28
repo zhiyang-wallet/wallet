@@ -1,37 +1,37 @@
 <template>
   <div class="wallet-home">
-      <ryt-header :title="headerTitle" :backUrl="backUrl"></ryt-header>
+      <ryt-header :title="headerTitle"></ryt-header>
       <div class="main">
           <div class="home-top">
               <p>昨日收益(元)</p>
               <h2>10.09</h2>
               <p>总金额5010.09(元)</p>
-              <i class="ryt-salary"></i>
+              <a class="ryt-salary" href="/myWallet"></a>
           </div>
           <div class="home-middle">
-              <p>
+              <a href="/accumulated">
                 <span>累计收益 (元)</span>
                 <span>200.09</span>
-              </p>
-              <p>
+              </a>
+              <a>
                 <span>七日年化 (%)</span>
                 <span>3.9</span>
-              </p>
+              </a>
           </div>
           <div class="home-list">
-              <mt-cell title="转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
+              <mt-cell title="转入" icon="more" is-link to="/turnIn">
                 <img slot="icon" src="../../static/images/turn-in.png" width="24" height="24">
               </mt-cell>
-              <mt-cell title="转出" icon="more" is-link :to="{ name: 'addCardMsg' }">
+              <mt-cell title="转出" icon="more" is-link to="/turnOut">
                 <img slot="icon" src="../../static/images/turn-out.png" width="24" height="24">
               </mt-cell>
-              <mt-cell title="定时转入" icon="more" is-link :to="{ name: 'addCardMsg' }">
+              <mt-cell title="定时转入" icon="more" is-link to="/turnInTime">
                 <img slot="icon" src="../../static/images/turn-in-time.png" width="28" height="24">
               </mt-cell>
-              <mt-cell title="定时转出" icon="more" is-link :to="{ name: 'addCardMsg' }">
+              <mt-cell title="定时转出" icon="more" is-link to="/turnOutTime">
                 <img slot="icon" src="../../static/images/turn-out-time.png" width="26" height="24">
               </mt-cell>
-              <mt-cell title="账单明细" icon="more" is-link :to="{ name: 'addCardMsg' }">
+              <mt-cell title="账单明细" icon="more" is-link to="/billDetail">
                 <img slot="icon" src="../../static/images/bill-detail.png" width="24" height="24">
               </mt-cell>
           </div>
@@ -47,7 +47,6 @@
         },
         data() {
             return { 
-                backUrl: '/',
                 headerTitle:'智阳钱包'
             };
         },

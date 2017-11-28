@@ -1,5 +1,8 @@
 @import 'variable';
 @import 'css3';
+a:hover{
+    text-decoration: none;
+}
 .mint-header{
     background-color:$headerBg; 
     .mint-header-title{
@@ -350,7 +353,7 @@
         font-size: 50px;
         color: $white;
     }
-    i{
+    a{
         position: absolute;
         top: 26px;
         right: 13px;
@@ -363,7 +366,7 @@
     background: -moz-linear-gradient(to bottom,#bba781,#c9bba0);
     display: flex;
     border-bottom: 8px solid #ececec;
-    & p:first-child:after{
+    & a:first-child:after{
         content: '';
         position: absolute;
         width: 1px;
@@ -372,7 +375,7 @@
         right: 0;
         background-color: rgba(255,255,255,0.3);
     }
-    p{
+    a{
         flex: 1;
         padding-top: 10px;
         position: relative;
@@ -386,7 +389,8 @@
             opacity: 0.6;
             margin-bottom: 3px;
         }
-        & span:last-child{
+        &:hover{
+            text-decoration: none;
         }
     }
 }

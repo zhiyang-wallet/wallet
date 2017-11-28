@@ -11,13 +11,13 @@
             </ul>
         </div>
         <div class="wallet-middle">
-            <mt-cell title="截止当日钱包总资产" label="￥10000.00" is-link></mt-cell>
+            <mt-cell title="截止当日钱包总资产" label="￥10000.00" is-link to="/home"></mt-cell>
         </div>
         <div class="wallet-list">
-             <mt-cell title="我的银行卡" icon="more" is-link :to="{ name: 'addCardMsg' }">
+             <mt-cell title="我的银行卡" icon="more" is-link to="/myBankCard">
                 <img slot="icon" src="../../static/images/bank-card.png" width="24" height="24">
               </mt-cell> 
-              <mt-cell title="设置" icon="more" is-link :to="{ name: 'addCardMsg' }">
+              <mt-cell title="设置" icon="more" is-link to="/set">
                 <img slot="icon" src="../../static/images/set.png" width="24" height="24">
               </mt-cell>              
         </div>
@@ -44,7 +44,7 @@
         data() {
             return {
                 headerTitle:'我的钱包',
-                backUrl: '/',
+                backUrl: '/home',
                 showMsg: false
             };
         },

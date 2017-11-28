@@ -54,7 +54,7 @@
                 checkbox: '同意定时转出服务协议',
                 date: '',
                 centerDate: '',
-                backUrl: '/',
+                backUrl: '/home',
                 bindCard: '兴业银行 尾号(6599)',
                 showMsg: false,
                 showPicker: false

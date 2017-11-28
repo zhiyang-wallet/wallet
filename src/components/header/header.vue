@@ -1,6 +1,6 @@
 <template>
   <mt-header fixed :title="title">
-    <router-link :to="backUrl" slot="left">
+    <router-link :to="backUrl" slot="left" v-show="backUrl">
       <mt-button icon="back"></mt-button>
     </router-link>
   </mt-header>
@@ -15,7 +15,7 @@
         },
         backUrl: {
           type: String,
-          default: '/'
+          default: ''
         }
       },
       data() {

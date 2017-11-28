@@ -32,7 +32,7 @@
         data() {
             return {
                 headerTitle:'转入',
-                backUrl: '/'
+                backUrl: '/home'
             };
         },
         methods: {

@@ -25,7 +25,7 @@
         data() {
             return {
                 headerTitle:'设置支付密码',
-                backUrl: '/'
+                backUrl: '/set'
             };
         },
         methods: {

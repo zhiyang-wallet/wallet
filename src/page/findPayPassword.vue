@@ -41,7 +41,7 @@
         data() {
             return {
                 headerTitle:'找回支付密码',
-                backUrl: '/',
+                backUrl: '/set',
                 showMsg: false
 
             };

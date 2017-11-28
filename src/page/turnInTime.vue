@@ -48,7 +48,7 @@
         data() {
             return {
                 headerTitle:'定时转入',
-                backUrl: '/',
+                backUrl: '/home',
                 checkbox: '同意定时转入服务协议',
                 date: '',
                 centerDate: '',

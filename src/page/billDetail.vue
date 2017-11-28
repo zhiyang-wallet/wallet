@@ -18,7 +18,7 @@
         },
         data() {
             return { 
-                backUrl: '/',
+                backUrl: '/home',
                 headerTitle:'账单明细'
             };
         },
